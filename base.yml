@@ -1,0 +1,4 @@
+mysql:
+  restart: always
+  ports:
+    - 3306:3306
