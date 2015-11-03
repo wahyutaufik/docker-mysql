@@ -3,6 +3,6 @@ mysql:
     file: base.yml
     service: mysql
   volumes:
-    - "/srv/mysql:/var/lib/mysql"
+    - /srv/mysql:/var/lib/mysql
   environment:
     MYSQL_PASS: password
