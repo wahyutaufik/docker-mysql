@@ -2,7 +2,6 @@ mysql:
   extends:
     file: base.yml
     service: mysql
-  image: tutum/mysql:latest
   volumes:
     - ./srv/db/mysql:/var/lib/mysql
   environment:
