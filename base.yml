@@ -1,3 +1,5 @@
 docker:
   restart: always
   build: .
+  ports:
+    - 3306:3306
