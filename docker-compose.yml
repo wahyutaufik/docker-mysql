@@ -1,8 +1,10 @@
 mysql:
   extends:
     file: base.yml
-    service: mysql
+    service: docker
   volumes:
     - ./srv/db/mysql:/var/lib/mysql
   environment:
-    MYSQL_PASS: password
+    MYSQL_ROOT_PASSWORD: password
+  ports:
+    - 3306:3306
